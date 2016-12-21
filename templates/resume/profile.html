@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+{% include 'navbar.html' %}
+<div class="container" style="background-image: ;">
+    <div class="row">
+        <img height="160" width="160" src="{% static 'img/kasia.jpg' %}" alt="Circle Image" class="img-circle center-block img-responsive img-raised">
+        <div>
+            <h1>Katarzyna Mankowska</h1>
+            <h3>Programmer - Database Architect</h3>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
