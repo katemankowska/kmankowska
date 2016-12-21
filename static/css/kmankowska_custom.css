@@ -1,0 +1,7 @@
+div#welcome_container.container-fluid {
+    margin-top: 0;
+}
+
+div#description_column.col-md-4 {
+    text-align: center;
+}

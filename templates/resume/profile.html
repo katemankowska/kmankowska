@@ -1,17 +1,22 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
+{% block base_css %}
+<link href="{% static 'css/kmankowska_custom.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
 {% include 'navbar.html' %}
-<div class="container" style="background-image: ;">
+<div class="container-fluid" style="background-image: url('{% static 'img/sands.jpg' %}');">
     <div class="row">
-        <img height="160" width="160" src="{% static 'img/kasia.jpg' %}" alt="Circle Image" class="img-circle center-block img-responsive img-raised">
-        <div>
+        <img height="200" width="200" src="{% static 'img/kasia.jpg' %}" style="margin-top: 20px" alt="Circle Image" class="img-circle center-block img-responsive img-raised">
+        <div class="col-md-4"></div>
+        <div class="col-md-4" id="description_column">
             <h1>Katarzyna Mankowska</h1>
             <h3>Programmer - Database Architect</h3>
         </div>
+        <div class="col-md-4"></div>
     </div>
 </div>
-
 {% endblock %}
 
