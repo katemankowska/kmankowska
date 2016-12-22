@@ -637,15 +637,15 @@ ul.social-icons i:hover {
 /*------------------------------------------------*/
 /*	Projects
 /*------------------------------------------------*/
-.projects {
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-image: url('../img/project-bg.png?1425380243');
-  background-repeat: no-repeat;
-  background-position: center -20em;
-}
+/*.projects {*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*-webkit-background-size: cover;*/
+  /*background-size: cover;*/
+  /*background-image: url('../img/project-bg.png?1425380243');*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: center -20em;*/
+/*}*/
 @media screen and (max-width: 1440px) {
   .projects {
     background-position: center 0;
