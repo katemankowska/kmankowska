@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "basics": {
+    "name": "Katarzyna Mankowska",
+    "label": "",
+    "picture": "",
+    "email": "kasia.mankowska@gmail.com",
+    "phone": "19084207046",
+    "degree": "",
+    "website": "www.kasiamankowska.com",
+    "summary": "An experienced and dedicated developer and database architect. Interested in working with large datasets and finding efficient but reliable solutions to any challenges that emerge. ",
+    "highlights": null,
+    "location": {
+      "address": "5 Wolverton Lane",
+      "postalCode": "08844",
+      "city": "Hillsborough",
+      "countryCode": "USA",
+      "region": "NJ"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "kmanko2",
+        "url": "www.linkedin.com/kmanko2"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Turtle and Hughes",
+      "position": "Senior Programmer",
+      "website": "www.turtle.com",
+      "startDate": "09/2003",
+      "endDate": "present",
+      "summary": "Serve as a senior developer in the Turtle and Hughes engineering department. Have led and supported a wide array of projects, including new website creation, database system transition, and Android application development. In charge of maintaining and improving the company's database systems, ensuring the smooth operation of one of the region's largest electrical distributors.",
+      "highlights": [
+        "Spearheaded the transition to a new enterprise database system. Was in charge of data transfer, testing, and implementation of crucial business logic to facilitate a smooth and successful transition.",
+        "Designed, developed, and deployed new intranet system using javascript, PHP, and MySql. System has been in use company wide for numerous years. I currently maintain and modernize the internal site based on the needs of users.",
+        "Analyzed and optimized a production MSSQL database setup, improving query efficiency by 20% and significantly reducing transaction time. Amended previous SQL queries to make more efficient use of indexes and speeding up report generation as a result.",
+        "Write failsafe scripts in Bash and Python to generate reports for crucial business arms of the company such as finance, billing, human resources, and operations.",
+        "Facilitate development of several company systems (intranet, billing, warehouse auto-replenishment Android app) by lending database architecture knowledge and providing custom database solutions based on use cases."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Adam Mickiewicz University",
+      "area": "",
+      "studyType": "Bachelor of Science",
+      "startDate": "09/1981",
+      "endDate": "06/1985",
+      "gpa": "3.7"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Databases",
+      "level": "Expert",
+      "keywords": [
+        "MySql",
+        "MSSQL",
+        "MySQL Workbench,",
+        "PHPMyAdmin"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "Expert",
+      "keywords": [
+        "SQL",
+        "PHP",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Languages",
+      "level": "Intermediate",
+      "keywords": [
+        "Python",
+        "Javascript",
+        "Python"
+      ]
+    }
+  ]
+}
