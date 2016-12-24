@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% load i18n %}
 
 {% block content %}
 <body id="top" data-spy="scroll" data-target="#main-nav">
@@ -17,8 +18,8 @@
 					</div>
 					<div class="col-md-6 right">
 						<h1 class="hide">Katarzyna Mankowska</h1>
-						<h2 class="heading">Kate Mankowska</h2>
-						<p>A Greater New York City based Software Engineer and Database Architect</p>
+						<h2 class="heading">{% trans "Kate Mankowska" %}</h2>
+						<p>{% trans "A Greater New York City area Software Engineer and Database Architect" %}</p>
 						<a href="#about-me" class="btn btn-default btn-lg">READ MORE</a>
 					</div>
 				</div>
@@ -30,34 +31,32 @@
 		<section class="section about-me" id="about-me">
 			<div class="container">
 				<h2 class="heading">ABOUT ME</h2>
-				<p>Monotonectally conceptualize go forward relationships and effective paradigms. Uniquely build team building convergence rather than progressive manufactured products. Quickly build professional web services through cross functional vortals. Synergistically transform functionalized e-markets through performance based human capital. Energistically engage global core competencies vis-a-vis superior architectures.</p>
-				<p>Holisticly foster process-centric core competencies whereas impactful meta-services. Seamlessly evisculate accurate leadership vis-a-vis highly efficient users. Authoritatively grow multifunctional action items and competitive processes. Collaboratively maximize resource sucking.</p>
+				<p>{% trans "Hey! My name is Katarzyna (Kate for short, but extra credit if you can pronounce my full name) and I'm a Programmer/Database Architect based in the NYC area. Originally from Warsaw, Poland, I now call New Jersey home, both professionally and personally." %}</p>
+				<p>{% trans "My primary focus is database architecture, but I also have significant experience in Web Development (currently using Python and previously having used PHP), bash scripting, and system analysis. I'm always looking for experiences and opportunities that enhance my development skills and teach me newer and more efficient ways to accomplish tasks." %}</p>
 				<div class="row interest">
 					<div class="col-md-3">
-						<h3 class="sub-heading"><span class="glyphicon glyphicon-headphones"></span> Music</h3>
-						<p>Efficiently revolutionize one-to-one potentialities before B2B models. Continually leverage other's resource-leveling niche markets whereas focused processes. Distinctively transition high standards in total linkage.</p>
+						<h3 class="sub-heading"><span class="glyphicon glyphicon-headphones"></span> {% trans "Music" %}</h3>
+						<p>{% trans "Having studied music theory in University, I enjoy listening to and playing classical music. A trained organist, I now dabble on the piano here and there." %}</p>
 					</div>
 					<div class="col-md-3">
-						<h3 class="sub-heading"><span class="glyphicon glyphicon-film"></span> Movies</h3>
-						<p>Holisticly pursue pandemic services before distributed experiences. Collaboratively envisioneer just in time niches before ubiquitous e-services. Appropriately enable scalable e-business with leveraged opportunities.</p>
+						<h3 class="sub-heading"><span class="glyphicon glyphicon-tree-conifer"></span> {% trans "Outdoors" %}</h3>
+						<p>{% trans "I spend most of my weekends outdoors: biking on a (please don't judge me) tandem bike with my husband, kayaking, hiking the towering peaks of New Jersey etc etc." %}</p>
 					</div>
 					<div class="col-md-3">
-						<h3 class="sub-heading"><span class="glyphicon glyphicon-briefcase"></span> Traveling</h3>
-						<p>Authoritatively transition global web services vis-a-vis user-centric content. Rapidiously innovate principle-centered resources via intuitive models. Monotonectally integrate collaborative core competencies before best-of-breed potentialities.</p>
+						<h3 class="sub-heading"><span class="glyphicon glyphicon-briefcase"></span> {% trans "Traveling" %}</h3>
+						<p>{% trans "I'm constantly on the move. Having grown up in Europe, I've visited dozens of countries and plan on touring many more in the near future. (See all the countries I've been to here):" %}<a href="#"><span class="glyphicon glyphicon-plane"></span></a></p>
 					</div>
 					<div class="col-md-3">
-						<h3 class="sub-heading"><span class="glyphicon glyphicon-book"></span> Books</h3>
-						<p>Holisticly restore resource-leveling methodologies rather than distinctive e-services. Seamlessly whiteboard unique quality vectors via functionalized catalysts for change. Enthusiastically embrace proactive outsourcing through.</p>
+						<h3 class="sub-heading"><span class="glyphicon glyphicon-book"></span> {% trans "Learning" %}</h3>
+						<p>{% trans "Enjoy learning SQL theory, debugging legacy database code, and contriving new and improved ways to query data." %}</p>
 					</div>
 				</div>
 				<div class="social">
-					<h3 class="sub-heading">Follow me on:</h3>
+					<h3 class="sub-heading">{% trans "Follow me on:" %}</h3>
 					<ul class="social-icons">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="https://plus.google.com/104218222719186471009"><i class="fa fa-google-plus"></i></a></li>
 						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -71,7 +70,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="skill-chart">
-							<div class="pie-chart" id="chart1" data-percent="92">
+							<div class="pie-chart" id="chart1" data-percent="90">
 								<span class="percent">90%</span>
 							</div>
 							<span class="chart-title">SQL</span>
@@ -82,41 +81,41 @@
 							<div class="pie-chart" id="chart2" data-percent="85">
 								<span class="percent">85%</span>
 							</div>
-							<span class="chart-title">WordPress</span>
+							<span class="chart-title">Bash</span>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="skill-chart">
-							<div class="pie-chart" id="chart3" data-percent="78">
-								<span class="percent">78%</span>
+							<div class="pie-chart" id="chart3" data-percent="50">
+								<span class="percent">50%</span>
 							</div>
-							<span class="chart-title">PHP</span>
+							<span class="chart-title">Python</span>
 						</div>
 					</div>
 				</div>
 				<div class="row" style="margin-top: 20px">
 					<div class="col-md-4">
 						<div class="skill-chart">
-							<div class="pie-chart" id="chart1" data-percent="92">
-								<span class="percent">90%</span>
+							<div class="pie-chart" id="chart1" data-percent="50">
+								<span class="percent">50%</span>
 							</div>
-							<span class="chart-title">SQL</span>
+							<span class="chart-title">Javascript</span>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="skill-chart">
-							<div class="pie-chart" id="chart2" data-percent="85">
-								<span class="percent">85%</span>
-							</div>
-							<span class="chart-title">WordPress</span>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="skill-chart">
-							<div class="pie-chart" id="chart3" data-percent="78">
-								<span class="percent">78%</span>
+							<div class="pie-chart" id="chart2" data-percent="50">
+								<span class="percent">50%</span>
 							</div>
 							<span class="chart-title">PHP</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="skill-chart">
+							<div class="pie-chart" id="chart3" data-percent="80">
+								<span class="percent">80%</span>
+							</div>
+							<span class="chart-title">MSSQL and MySQL</span>
 						</div>
 					</div>
 				</div>
@@ -127,38 +126,26 @@
 		<!-- RESUME -->
 		<section class="section resume" id="resume">
 			<div class="container">
-				<h2 class="heading">RESUME</h2>
+				<h2 class="heading">{% trans "RESUME" %} </h2>
+                <h2 class="heading"><a href="/resume/" class="btn btn-default btn-lg">View PDF</a></h2>
 				<ul class="timeline">
-					<li class="year">2013</li>
+					<li class="year">2007</li>
 					<li class="event">
-						<h3 class="heading">Senior Web Designer</h3>
-						<span class="month"><i class="fa fa-calendar"></i>September 2007 - present</span>
-						<p>Dramatically reconceptualize diverse imperatives whereas out-of-the-box manufactured products. Dynamically negotiate seamless data via proactive ideas. Globally seize revolutionary imperatives rather than standardized niches.</p>
+						<h3 class="heading">Senior Developer</h3>
+						<span class="month"><i class="fa fa-calendar"></i>October 2007 - current</span>
+						<p> Serve as a senior developer in the Turtle and Hughes engineering department. Have led and supported a wide array of projects, including new website creation, database system transition, and Android application development. </p>
 					</li>
+                    <li class="year">2003</li>
 					<li class="event">
-						<h3 class="heading">Web Developer &amp; Designer</h3>
-						<span class="month"><i class="fa fa-calendar"></i>January 2007 - September 2007</span>
-						<p>Dynamically procrastinate proactive methodologies and multimedia based materials. Phosfluorescently incentivize magnetic leadership skills before inexpensive users.</p>
+						<h3 class="heading">Developer</h3>
+						<span class="month"><i class="fa fa-calendar"></i>September 2003 - October 2007</span>
+						<p> Designed, developed, and deployed new intranet system using javascript, PHP, and MySql. System has been in use company wide for numerous years</p>
 					</li>
-					<li class="year">2006</li>
+                    <li class="year">1986</li>
 					<li class="event">
-						<h3 class="heading">Internship Program at Visual Dream Inc.</h3>
-						<span class="month"><i class="fa fa-calendar"></i>August 2006 - December 2006</span>
-						<p>Globally transition unique solutions vis-a-vis dynamic niche markets. Interactively recaptiualize superior leadership without end-to-end catalysts for change. Globally extend worldwide data without quality. Efficiently disseminate premium markets for strategic initiatives. Completely orchestrate effective e-business and unique partnerships.</p>
-					</li>
-					<li class="event">
-						<h3 class="heading">Freelance Project</h3>
-						<span class="month"><i class="fa fa-calendar"></i>June 2006 - August 2006</span>
-						<p>Globally transition unique solutions vis-a-vis dynamic niche markets. Interactively recaptiualize superior leadership without end-to-end catalysts for change. Globally extend worldwide data without quality. Efficiently disseminate premium markets for strategic initiatives. Completely orchestrate effective e-business and unique partnerships.</p>
-						<figure>
-							<img src="assets/img/skills.png" alt="Skills" />
-						</figure>
-					</li>
-					<li class="year">2003</li>
-					<li class="event">
-						<h3 class="heading">University of Design</h3>
-						<span class="month"><i class="fa fa-calendar"></i>October 2003 - May 2006</span>
-						<p> Globally extend worldwide data without quality. Efficiently disseminate premium markets for strategic initiatives. Completely orchestrate effective e-business and unique partnerships.</p>
+						<h3 class="heading">Adam Mickiewicz University</h3>
+						<span class="month"><i class="fa fa-calendar"></i>September 1982 - June 1986</span>
+						<p>Bachelor of Science</p>
 					</li>
 				</ul>
 			</div>
@@ -169,7 +156,7 @@
 		<section class="section contacts" id="contacts">
 			<div class="container">
 				<h2 class="heading">CONTACTS</h2>
-				<p>Continually promote world-class methodologies through equity invested results. Monotonectally target stand-alone ideas via cross-media collaboration and idea-sharing. Seamlessly grow innovative markets.</p>
+{#				<p>Continually promote world-class methodologies through equity invested results. Monotonectally target stand-alone ideas via cross-media collaboration and idea-sharing. Seamlessly grow innovative markets.</p>#}
 {#				<div class="row google-map">#}
 {#					<div class="map-canvas"></div>#}
 {#				</div>#}
